@@ -14,6 +14,7 @@ driver.get(url)
 
 fname,lname,org,email,pwd,repwd = input()
 
+# Registering new client
 driver.find_element(By.XPATH, "//button[text()='Register Now!']").click()
 driver.find_element(By.NAME, "firstName").send_keys(fname)
 driver.find_element(By.NAME,"lastName").send_keys(lname)

@@ -6,6 +6,7 @@ time_frame_minutes = 10  # Change this to the desired time frame
 # Get the first input from the user
 input1 = input("Enter the first input: ")
 
+# Added some change by Balu
 # Record the time when the first input was entered
 start_time = time.time()
 
