@@ -6,7 +6,7 @@ import psycopg2
 import bcrypt
 from selenium.common.exceptions import NoSuchElementException
 
-
+# function used to login to dashboard
 def login():
     chrome_driver_path = 'C:/Users/chaitra.antapur/Desktop/chaitra/chromedriver-win64 (1)/chromedriver-win64/chromedriver.exe'
 
@@ -38,7 +38,7 @@ def login():
         "port": 5432,
         }
 
-# Establish a connection to the PostgreSQL database
+# Establishes a connection to the PostgreSQL database
     conn = psycopg2.connect(**db_params)    
     cursor = conn.cursor()
 
